@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+   <h1>
+       javascript
+   </h1>
+
+   <script>
+    //    kilometer to meter
+    function number(km){
+        var length = km*1000
+        return length;
+    }
+    var length = number(15)
+    document.write(length+ 'meter')
+   </script><hr>
+   <script> 
+    //    meter to kilometer
+    function number(m){
+        var length = m/1000
+        return length;
+    }
+    var length = number(100000)
+    document.write(length+ 'km')
+   </script><hr>
+   <script>
+    //    item bill function
+       function item(watch, mobile, laptop, monitor, camera ){
+           var item1=watch*5000;
+           var item2=mobile*25000;
+           var item3=laptop*55000;
+           var item4=monitor*22000;
+           var item5=camera*70000;
+           var total=item1+item2+item3+item4+item5;
+           return total;
+       }
+       var total = item(2,2,1,3,1)
+       document.write('Total=' +total +'taka')
+   </script><hr>
+   <script>
+    //    hotel bill fuction
+    function hotelBill(day){
+        var cost;
+        if (day<=10){
+            var cost= day*100
+        }else if(day<=20){
+            var first10DayTotal=10*100;
+            var restOfTheDay=day-10;
+            var restOfTheTotal=restOfTheDay*80;
+            var cost=first10DayTotal+restOfTheTotal;
+        }else{
+            var first10DayTotal=10*100;
+            var second10Daystotal=10*80;
+            var remaingDays=day-20;
+            var remainingDaysTotal=remaingDays*50;
+            var cost=first10DayTotal+second10Daystotal+remainingDaysTotal;
+        }
+        return cost; 
+    }
+    var totalcost=hotelBill(28);
+    document.write(totalcost+'Taka')
+   </script><hr>
+   <script>
+    // longest name defined funtion
+    function names(array){
+      var name=''
+        for(var firstname=0;firstname<array.length;firstname++);
+        if(name.length<array[firstname].length){
+            name=array[firstname];
+        }
+        
+
+        return name;
+        
+    }
+    var allNames=['ChinmoyBarmon','AbdurRahaman','AliAkbarTutul','AnwarHossain',
+'AnwarHossainArnob','ArnobRoy','AtiquirRahman','MahadiHasanSumon','MdMarufHassanMujahid','MdRashelSheikh','MdAhosanHabibPranto','MehediHasan','MizanurRahmanSh','NaiemIslam','NazmulHossain','NurAlam','RahedulIslam','RaselAbdullah','RonySheikh','saadMdArifulRahman','sabbiRahmmed','shahinAlam','SharifulIslam','ShimulKantiSarkar','SujonRana','TasnimRahmanJarin','MonisaAktar']
+document.write(allNames);
+   </script><hr>
+   <script>
+    // length from the name list
+    var names=['ChinmoyBarmon','AbdurRahaman','AliAkbarTutul','AnwarHossain',
+'AnwarHossainArnob','ArnobRoy','AtiquirRahman','MahadiHasanSumon','MdMarufHassanMujahid',
+'MdRashelSheikh','MdAhosanHabibPranto','MehediHasan','MizanurRahmanSh','NaiemIslam','NazmulHossain',
+'NurAlam','RahedulIslam','RaselAbdullah','RonySheikh','saadMdArifulRahman','sabbiRahmmed','shahinAlam',
+'SharifulIslam','ShimulKantiSarkar','SujonRana','TasnimRahmanJarin','MonisaAktar' ]
+   document.write(names[0].length)
+   document.write('<br>')
+   document.write(names[1].length)
+   document.write('<br>')
+   document.write(names[2].length)
+   document.write('<br>')
+   document.write(names[3].length)
+   document.write('<br>')
+   document.write(names[4].length)
+   document.write('<br>')
+   document.write(names[5].length)
+   document.write('<br>')
+   document.write(names[6].length)
+   document.write('<br>')
+   document.write(names[7].length)
+   document.write('<br>')
+   document.write(names[8].length)
+   document.write('<br>')
+   document.write(names[9].length)
+   document.write('<br>')
+   document.write(names[10].length)
+   document.write('<br>')
+   document.write(names[11].length)
+   document.write('<br>')
+   document.write(names[12].length)
+   document.write('<br>')
+   document.write(names[13].length)
+   document.write('<br>')
+   document.write(names[14].length)
+   document.write('<br>')
+   document.write(names[15].length)
+   document.write('<br>')
+   document.write(names[16].length)
+   document.write('<br>')
+   document.write(names[17].length)
+   document.write('<br>')
+   document.write(names[18].length)
+   document.write('<br>')
+   document.write(names[19].length)
+   document.write('<br>')
+   document.write(names[20].length)
+   document.write('<br>')
+   document.write(names[21].length)
+   document.write('<br>')
+   document.write(names[22].length)
+   document.write('<br>')
+   document.write(names[23].length)
+   document.write('<br>')
+   document.write(names[24].length)
+   document.write('<br>')
+   document.write(names[25].length)
+   document.write('<br>')
+   document.write(names[26].length)
+   document.write('<br>')
+   document.write(names[27].length)
+ 
+   
+   
+</script>
+
+</script><hr>
+<script>
+     var names=['ChinmoyBarmon','AbdurRahaman','AliAkbarTutul','AnwarHossain','AnwarHossainArnob','ArnobRoy','AtiquirRahman','MahadiHasanSumon','MdMarufHassanMujahid','MdRashelSheikh','MdAhosanHabibPranto','MehediHasan','MizanurRahmanSh','NaiemIslam','NazmulHossain','NurAlam','RahedulIslam','RaselAbdullah','RonySheikh','saadMdArifulRahman','sabbiRahmmed','shahinAlam','SharifulIslam','ShimulKantiSarkar','SujonRana','TasnimRahmanJarin','MonisaAktar' ]
+    for(var data in names){
+        document.write(names[data]+ '<br>');
+        
+    }
+</script>
+</body>
+</html>
